@@ -1,0 +1,3 @@
+st_digit.c:29: ERROR: trailing whitespace
+1-last_digit.c:34: ERROR: trailing whitespace
+total: 3 errors, 0 warnings, 44 lines checked
