@@ -19,6 +19,7 @@ int main(void)
 			putchar('0' + j);
 			putchar(count < 44 ?  ',' : ' ');
 			count++;
+			putchar(32);
 		}
 	}
 	putchar('\n');
