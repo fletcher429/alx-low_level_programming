@@ -6,18 +6,21 @@
  * Return: 0 when done
  */
 
-
 int main(void)
 {
 	int a = 97;
 
 	while (a <= 122)
 	{
+	
 		putchar(a);
-		n++;
+		a++;
+	
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
+
+
 
 
 
