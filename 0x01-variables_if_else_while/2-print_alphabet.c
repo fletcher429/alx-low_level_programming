@@ -9,19 +9,15 @@
 
 int main(void)
 {
-	int n;
+	int a = 97;
 
-	for (n = 97; n  <= 122; ++n)
+	while (a <= 122)
 	{
-		putchar(c);
-		
+		putchar(a);
+		n++;
 	}
 	putchar("\n");
 	return (0);
-
-
-
-
 
 
 
