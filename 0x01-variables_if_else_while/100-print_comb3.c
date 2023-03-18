@@ -9,14 +9,17 @@
 
 int main(void)
 {
-	int n;
+	int i, j,  count = 0;
 
-	for (n = 1; n <= 90; n++)
+	for (i = 0; i <= 9; i++)
 	{
-		putchar('0' + n / 10);
-		putchar('0' + n % 10);
-		putchar(44);
-		putchar(' ');
+		for (j = i + 1; j < 10; j++)
+		{
+			putchar('0' + i);
+			putchar('0' + j);
+			putchar(count < 44 ?  ',' : ' ');
+			count++;
+		}
 	}
 	putchar('\n');
 	return (0);
