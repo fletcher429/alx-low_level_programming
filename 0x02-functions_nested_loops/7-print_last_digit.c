@@ -10,7 +10,19 @@
  */
 int print_last_digit(int a)
 {
-	a = a % 10;
-	_putchar(a);
-	return (0);
+	int b;
+
+	b = a % 10;
+
+	if (b < 0)
+	{
+		_putchar(-b  + 48);
+		return (-b);
+	}
+	else
+	{
+		_putchar(b + 48);
+		return (b);
+	}
+	_putchar('\n');
 }
