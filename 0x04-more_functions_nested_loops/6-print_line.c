@@ -5,13 +5,13 @@
  */
 void print_line(int n)
 {
-	int i;
+	
 
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-	for (n = 0; n < i; n++)
+	for (n = 0; n < 10; n++)
 	{
 		_putchar(95);
 	}
