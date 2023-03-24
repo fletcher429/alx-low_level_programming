@@ -4,6 +4,7 @@
  * _isupper - gets the uppercase
  *
  * Return: 1 if true
+ * @c: ascii codes
  */
 int _isupper(int c)
 {
