@@ -2,21 +2,18 @@
 /**
  * print_line - prints the line
  * @n: prints
- * @i: define new number
  */
 void print_line(int n)
 {
+	int i;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
 	}
-	else
+	for (n = 0; n < i; n++)
 	{
-		for (int i = 0; i < n; i++)
-		{
-			_putchar('_');
-
-		}
+		_putchar(95);
 	}
 	_putchar('\n');
 }
