@@ -2,7 +2,7 @@
 /**
  * print_line - prints the line
  * @n: prints
- * @i: prints them
+ * @i: define new number
  */
 void print_line(int n)
 {
@@ -10,10 +10,13 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-	for (int n = 0; n <= 10; i++)
+	else
 	{
-		_putchar('_');
+		for (int i = 0; i < n; i++)
+		{
+			_putchar('_');
 
+		}
 	}
 	_putchar('\n');
 }
