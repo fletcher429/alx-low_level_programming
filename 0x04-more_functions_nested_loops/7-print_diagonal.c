@@ -2,9 +2,9 @@
 /**
  * print_diagonal - prints them in diagonal
  *
- * @a: first var
- * @n: checks the condition
- * @b: second var
+ * @n: first var
+ * @i: checks the condition
+ * @j: second var
  */
 void print_diagonal(int n)
 {
@@ -12,14 +12,20 @@ void print_diagonal(int n)
 	{
 		_putchar('\n');
 	}
-
-	for (int a = 0; a < 10; a++)
+	else
 	{
-		for (int b = 0; b < 10; b++)
+		int i, j;
+
+		for (i = 0; j < n; j++)
 		{
-			_putchar(' ');
+			for (j = 0; j < n; j++)
+			{
+				if (j == i)
+					_putchar('\\');
+				else if (j < i)
+					_putchar(' ');
+			}
+			_putchar('\n');
 		}
-		_putchar('\\');
-		_putchar('\n');
 	}
 }
