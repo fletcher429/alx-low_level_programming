@@ -4,16 +4,25 @@
 /**
  * more_numbers - prints them 0 - 14
  * @a - the numbers
+ * @b - ascii codes
  * Return: 0 when done
  */
 void more_numbers(void)
 {
 	int a;
+	int b;
 
-	for (a = 0; a <= 14; a++)
+	for (a = 1; a <= 10, a++)
 	{
-		_putchar(a / 10 + '0');
-		_putchar(a % 10 + '0');
+		for (b = 0; b <= 14; b++)
+		{
+			if (j >= 10)
+			{
+				_putchar('1');
+				_putchar(j % 10 + '0');
+			}
+		}
+		_putchar('\n');
+
 	}
-	_putchar('\n');
 }
