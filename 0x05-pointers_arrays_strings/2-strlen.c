@@ -3,6 +3,7 @@
 /**
  * _strlen - returns the length of a string
  * @s: string to evaluate
+ * len: convertd
  *
  * Return: the length of the string
  */
@@ -10,12 +11,11 @@ int _strlen(char *s)
 {
 	int i;
 
-	i = 0;
+	int len;
 
-	while (s[i] != '\0')
-	{
-		i++;
-	}
+	s = "hello world";
+	len = _strlen(s);
 
-	return (i);
+	return (len);
+
 }
