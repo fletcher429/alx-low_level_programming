@@ -5,7 +5,7 @@
  * @c: this the target
  * Return: s when found
  */
-char *strchr(char *s, char c)
+char *_strchr(char *s, char c)
 {
 	for (*s = 0; *s != '\0'; s++)
 	{
