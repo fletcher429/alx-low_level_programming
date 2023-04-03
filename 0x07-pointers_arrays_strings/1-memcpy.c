@@ -2,19 +2,20 @@
 /**
  * _memcpy - copies memory area
  * @dest: the pointer destination
+ * @c: sets iteration
  * @src: pointer src
  * @n: amount of memory area to be copied
  * Return: dest
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	char *prevsrc;
-	char *postdest;
+	unsigned int c;
 
-	while (n > 0)
+	c = 0;
+
+	while (c < n)
 	{
-		*postdest++ = *prevsrc;
-		n--;
+		dest[c] = src[c];
 	}
 	return (dest);
 }
