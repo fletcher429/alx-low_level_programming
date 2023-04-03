@@ -16,6 +16,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	while (c < n)
 	{
 		dest[c] = src[c];
+		c++;
 	}
 	return (dest);
 }
