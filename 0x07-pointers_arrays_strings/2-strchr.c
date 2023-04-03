@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * strchr -  locates a string
+ * _strchr -  locates a string
  * @s: string
  * @c: this the target
  * Return: s when found
