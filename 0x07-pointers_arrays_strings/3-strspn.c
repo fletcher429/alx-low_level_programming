@@ -3,7 +3,7 @@
  * _strspn - function to write the legth of a substring
  * @s: evaluation
  * @accept: stores the string
- * @return: the length
+ * @Return: the length
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 				g++;
 				h = 1;
 			}
-		} 
+		}
 		if (h == 0)
 		{
 			return (g);
