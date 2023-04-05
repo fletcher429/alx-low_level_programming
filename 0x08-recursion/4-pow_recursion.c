@@ -1,5 +1,6 @@
 #include "main.h"
 #include <math.h>
+#include <limits.h>
 /**
  * _pow_recursion - returns the pow of y
  * @x: value to be returned
