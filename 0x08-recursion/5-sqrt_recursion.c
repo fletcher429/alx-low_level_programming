@@ -36,5 +36,5 @@ int culc_sqrt(int i, int n)
 
 int _sqrt_recursion(int n)
 {
-	return (culc_sqrt(1, n)
+	return (culc_sqrt(1, n);
 }
