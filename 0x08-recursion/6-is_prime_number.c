@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * prime_number - helper function
- * is_prime_number - recursive function
+ * prime_number - helper functio
+ * is_prime_number - calls the helper function
  * @n: prime number
  * @i: divisor
  * Return: prime
