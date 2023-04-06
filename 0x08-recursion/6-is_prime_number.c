@@ -4,6 +4,7 @@
  * is_prime_number - recursive function
  * @n: prime number
  * @i: divisor
+ * Return: prime
  */
 
 int prime_number(int i, int n)
