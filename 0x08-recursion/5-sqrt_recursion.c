@@ -6,21 +6,25 @@
  * @i: sets the iteration
  * Return: squareroot of a natural number
  */
-int sqrt_algo_func(int n, int i)
+int sqrt_algo_func(int n, int i);
+
+
+
+int _sqrt_recursion(int n)
 {
+
 	if (n < 0)
 	{
 		return (-1);
 	}
 	else
 	{
-		return (sqrt_algo_func(i, n));
+		return (sqrt_algo_func(n, 0));
 	}
 }
 
-int _sqrt_recursion(int n)
+int sqrt_algo_func(int n, int i)
 {
-	int i;
 
 	if (i * i > n)
 	{
