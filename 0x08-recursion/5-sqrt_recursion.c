@@ -28,7 +28,7 @@ int _sqrt_recursion(int n)
 	}
 	else if (i * i == n)
 	{
-		return (sqrt_algo_func(n, i++));
+		return (sqrt_algo_func(n, i + 1));
 	}
 	else
 	{
