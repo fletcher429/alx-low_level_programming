@@ -11,7 +11,7 @@ int prime_number(int i, int n)
 {
 	if (i * i > n)
 		return (1);
-	if(n %  i == 0)
+	if(n %  i == 0 && i > 0)
 		return (0);
 	return (prime_number(i -1, n));
 }
