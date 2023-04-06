@@ -9,7 +9,7 @@
 
 int prime_number(int i, int n)
 {
-	if (i * i > n)
+	if (i == 1)
 		return (1);
 	if (n %  i == 0 && i > 0)
 		return (0);
