@@ -6,18 +6,18 @@
  * @i: divisor
  */
 
-int is_prime_number(int n)
-{
-	if (n < 2)
-		return (0);
-	return (is_prime_number(n, 2));
-}
-
 int prime_number(int i, int n)
 {
 	if (i * i > n)
-		return (1);
-	if (n % i == 0)
 		return (0);
-	return (is_prime_number(n, i + 1));
+	if(i * i == n)
+		return (1);
+	return (prime_number(i + 1, n));
+}
+
+int is_prime_number(int n)
+{
+	if (n < 0)
+		return (0);
+	return (prime_number(2, n));	
 }
