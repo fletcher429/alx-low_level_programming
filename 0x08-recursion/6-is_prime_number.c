@@ -13,7 +13,7 @@ int prime_number(int i, int n)
 		return (1);
 	if (n %  i == 0 && i > 0)
 		return (0);
-	return (prime_number(i + 1, n));
+	return (prime_number(i - 1, n));
 }
 /**
  * is_prime_number - calls the helper
@@ -25,5 +25,5 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	return (prime_number(n + 1));
+	return (prime_number(n, i - 1));
 }
