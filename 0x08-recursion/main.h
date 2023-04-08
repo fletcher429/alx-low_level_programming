@@ -13,6 +13,8 @@ int _sqrt_recursion(int n);
 int sqrt_algo_func(int i, int n);
 int prime_number(int i, int n);
 int is_prime_number(int n);
+int _actual_palindrome(char *s, int a, int length)
+int is_palindrome(char *s);
 
 
 
