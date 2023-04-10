@@ -7,6 +7,6 @@
  */
 int main(int argc __attribute__((unsused)), char *argv[])
 {
-	_putchar(*argv);
+	printf("%s\n", *argv);
 	return (0);
 }
