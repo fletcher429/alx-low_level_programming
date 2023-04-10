@@ -5,14 +5,8 @@
  * @i: set the index
  * Returin: 0
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unsused)), char *argv[])
 {
-	int i;
-
-	for (i = 0; argv[0][i] != '\0'; i++)
-	{
-		_putchar(argv[0][i]);
-	}
-	_putchar('\n');
+	_putchar(*argv);
 	return (0);
 }
