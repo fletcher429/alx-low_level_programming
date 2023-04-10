@@ -1,7 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - gets the name of the programme
+ * @argc: no of command line arguments
+ * @argv: pointers to string
  * @i: set the index
  * Returin: 0
  */
