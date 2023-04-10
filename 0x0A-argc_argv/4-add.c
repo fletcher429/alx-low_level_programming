@@ -21,7 +21,7 @@ int main (int argc, char *argv[])
 	{
 		int x;
 
-		for (x = 0; i < argv[i][x]; x++)
+		for (x = 0; argv[i][x] != '\0'; x++)
 		{
 			if (!isdigit(argv[i][x]))
 			{
