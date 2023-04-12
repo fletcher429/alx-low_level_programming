@@ -9,31 +9,36 @@
  */
 int **alloc_grid(int width, int height)
 {
-	int i, j;
-	int **two;
+    int i, j;
+    int **p;
 
-	if (width <= 0 || height <= 0)
-	{
-		return (NULL);
-	}
-	two = malloc(sizeof(int) * height);
+    // Check if width and height are valid
+    if (width <= 0 || height <= 0)
+        return (NULL);
 
-	if (two == NULL)
-		return (NULL);
-	for (i = 0; i < height; i++)
-	{
-		two[i] = malloc(sizeof(int) * width);
+    // Allocate an array of height pointers
+    p = (int **) malloc(sizeof(int *) * height);
 
-		if (two[i] == NULL)
-		{
-			for (j = 0; j < i; i++)
-				free(two[j]);
-			free(two);
-			return (NULL);
-		}
-	}
-	for (i = 0; i < height; i++)
-		for (j = 0; j < width; j++)
-			two[i][j] = 0;
-	return (two);
+    // If allocation fails, return NULL
+    if (p == NULL)
+        return (NULL);
+
+    // For each row, allocate an array of width integers
+    for (i = 0; i < height; i++) {
+        p[i] = (int *) malloc(sizeof(int) * width);
+        // If allocation fails, free previously allocated memory and return NULL
+        if (p[i] == NULL) {
+            for (j = 0; j < i; j++)
+                free(p[j]);
+            free(p);
+            return (NULL);
+        }
+        // Initialize each element to 0
+        for (j = 0; j < width; j++)
+            p[i][j] = 0;
+    }
+
+    // Return the pointer to the 2D array
+    return (p);
 }
+
