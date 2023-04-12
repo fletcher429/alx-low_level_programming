@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * strdup - returns a pointer to a newly allocated space
+ * _strdup - returns a pointer to a newly allocated space
  * @str: string
  * Return: pointer
  */
@@ -19,7 +19,7 @@ char *_strdup(char *str)
 	{
 		i++;
 	}
-	ptr = (char*)malloc(sizeof(char) * (i + 1));
+	ptr = (char *)malloc(sizeof(char) * (i + 1));
 	if (ptr == NULL)
 	{
 		return (NULL);
