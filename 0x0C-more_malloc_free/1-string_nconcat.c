@@ -1,48 +1,53 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdlib.h>
+#include "main.h"
 /**
- * strlen - finds the legnth of a string
- * @length - the string
- * Return: legnth of a string
+ * _strlen - calculate and return string length
+ * @string: string
+ * Return: string length
  */
-int strlen(char *length)
+int _strlen(char *string)
 {
-	int j;
+	int i;
 
-	for (j = 0; length[j] != '\0'; j++)
+	for (i = 0; string[i] != '\0'; i++)
 		;
-	return (j);
+	return (i);
 }
-
 /**
- * string_nconcat - concates two strings
+ * string_nconcat - concatenate s1 and n bytes of s2; return ptr to string
  * @s1: string 1
  * @s2: string 2
- * @n: number of bytes of s2 to new string
+ * @n: n bytes to concat from string 2
+ * Return: pointer to concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j, l1, l2;
-	char *cont;
-	
-       if (s1 == NULL)
-	       s1 = "";
-       if (s2 == NULL)
-	       s2 = "";
-       if (n < strlen(s2))
-	       strlen(s2) = num;
-       l1 = strlen(s1) + n + 1;
+	char *ptr;
+	int num, len, i, j;
 
-       count = malloc(sizeof(*count) * l1);
-       
-       if(!count)
-	       return (NULL);
+	num = n;
 
-       for (i = 0; s1[i] != '\0'; i++)
-	       cont[i] = s1[i];
-       for (j = 0; j < n; j++)
-	       cont[i + j] = s2[j];
-       cont[i + j] ='\0';
+	if (s1 == NULL) /* account for NULL strings */
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+	if (num < 0) /* account for negative n bytes */
+		return (NULL);
+	if (num >= _strlen(s2)) /* account for n too big */
+		num = _strlen(s2);
 
-       return(cont);
+	len = _strlen(s1) + num + 1; /* +1 to account for null pointer */
+
+	ptr = malloc(sizeof(*ptr) * len); /* malloc and check for error */
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; s1[i] != '\0'; i++) /* concat */
+		ptr[i] = s1[i];
+	for (j = 0; j < num; j++)
+		ptr[i + j] = s2[j];
+	ptr[i + j] = '\0';
+
+	return (ptr);
 }
