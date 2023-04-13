@@ -12,19 +12,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i, j, l1 = 0, l2 = 0;
 	char *concat;
+        if (n < l2) 
+         { 
+                 concat = malloc(sizeof(char) *(l1 + n + 1)); 
+         } 
+         else 
+         { 
+                 concat = malloc(sizeof(char) * (l1 + l2 + 1));
 
 	for (i = 0; s1 && s1[i]; i++)
 		l1++;
 	for (j = 0; s2 && s2[i]; i++)
 		l2++;
-	if (n < l2)
-	{
-		concat = malloc(sizeof(char) *(l1 + n + 1));
-	}
-	else
-	{
-		concat = malloc(sizeof(char) * (l1 + l2 + 1));
-	}
 	if (!concat)
 	{
 		return (NULL);
