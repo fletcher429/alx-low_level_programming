@@ -6,7 +6,7 @@
  * @str: string find len
  * Return: string length
  */
-int _strlen(char *string)
+int _strlen(char *str)
 {
 	int m;
 
