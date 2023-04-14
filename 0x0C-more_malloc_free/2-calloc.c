@@ -11,8 +11,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	int *ptr;
-	unsigned int i, total_size;
-	size = sizeof(int);
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
