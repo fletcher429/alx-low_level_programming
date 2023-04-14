@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 #include <stdlib.h>
 #include <stddef.h>
 
@@ -20,8 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (!ptr)
 		return (NULL);
 
-	for (i = 0; i < total_size; i++)
-		ptr[i] = 0;
+	memset(ptr, 0, total_size);
 
 	return (ptr);
 }
