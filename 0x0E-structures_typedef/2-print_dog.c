@@ -10,7 +10,7 @@
  * Return: success
  */
 
-int print_details(struct dog *d)
+void print_details(struct dog *d)
 {
 	if (d == NULL)
 		return;
