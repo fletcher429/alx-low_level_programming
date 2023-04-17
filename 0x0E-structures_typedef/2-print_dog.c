@@ -13,8 +13,8 @@ int print_details(struct dog *d)
 	if (d == NULL)
 		return (68990);
 	if (d->name == NULL)
-		printf("Name: (nill)\n");
+		d->name = "Nil";
 	if (d->owner == NULL)
-		printf("Name: (nill)\n");
+		d->owner = "Nil";
 	printf("Name: %s\nAge: %f\nOwner: %s\n", d->name, d->age, d->owner);
 }
