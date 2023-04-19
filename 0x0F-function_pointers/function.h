@@ -1,5 +1,5 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef FUNCTION_H
+#define FUNCTION_H
 #include <stdlib.h>
 
 
