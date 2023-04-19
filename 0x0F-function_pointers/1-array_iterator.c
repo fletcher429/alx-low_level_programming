@@ -5,6 +5,7 @@
  * array_iterator - executes a function given as apara
  * @array: iteration
  * @action: executes
+ * @size: array
  */
 
 
