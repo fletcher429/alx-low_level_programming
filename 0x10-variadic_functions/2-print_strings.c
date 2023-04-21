@@ -4,8 +4,8 @@
 #include <stdarg.h>
 
 /**
- * prints_string - print strings followed by a new line
- * @separator - the comma and the space
+ * print_strings - print strings followed by a new line
+ * @separator: the comma and the space
  * @n: number of arguments passed
  * Return: void;
  */
@@ -21,7 +21,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	{
 		str = va_arg(args, char*);
 		printf("%s", str);
-		if (separator != NULL && i != (n-1))
+		if(!str)
+			printf("nil");
+		if (separator != NULL && i != (n - 1))
 		{
 			printf("%s", separator);
 		}
