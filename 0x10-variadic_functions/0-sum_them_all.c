@@ -13,7 +13,9 @@ int sum_them_all(const unsigned int n, ...)
 	unsigned int i, x, s = 0;
 
 	va_list sum;
+
 	va_start(sum, n);
+
 
 	for (i = 0; i < n; i++)
 	{
