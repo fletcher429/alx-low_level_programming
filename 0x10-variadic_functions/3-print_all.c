@@ -3,11 +3,8 @@
 #include <stdarg.h>
 #include <stdlib.h>
 /**
- *
- * print_all - prints anything
+ * print_all - prints
  * @format: prints formatted string to the output
- *
- *
  * Return: printed char
  *
  */
@@ -19,7 +16,7 @@ void print_all(const char * const format, ...)
 
 	va_list print;
 
-	va_start (print, format);
+	va_start(print, format);
 
 
 	if (format)
@@ -43,7 +40,7 @@ void print_all(const char * const format, ...)
 				case 'f':
 					printf("%s%f", space, va_arg(print, double));
 					break;
-				default: 
+				default:
 					j++;
 					continue;
 			}
