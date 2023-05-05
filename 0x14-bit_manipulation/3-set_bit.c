@@ -4,6 +4,7 @@
  * set_bit - sets the value of a bit to 1 at a given index
  * @n: input bin
  * @index: index of the bit
+ * Return: bit set
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
@@ -13,5 +14,5 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	 *n |= (1 << index);
 
-	return (* n>> index & 1);
+	return (*n >> index & 1);
 }
