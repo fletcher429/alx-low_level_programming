@@ -10,6 +10,9 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int sig_bit = 1;
 
+	if (n == 0)
+		_putchar('0);
+
 	while (sig_bit <= n)
 	{
 		sig_bit <<= 1;
