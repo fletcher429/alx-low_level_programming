@@ -8,8 +8,8 @@
 
 void print_binary(unsigned long int n)
 {
-	int bin = 0;
-	int base = 1;
+	unsigned long int bin = 0;
+	unsigned long int base = 1;
 
 	if (n == 0)
 	{
@@ -23,6 +23,6 @@ void print_binary(unsigned long int n)
 		n >>= 1;
 		base *= 10;
 	}
-	printf("%d", bin);
+	printf("%lu", bin);
 
 }
