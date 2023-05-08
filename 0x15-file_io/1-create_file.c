@@ -11,8 +11,8 @@ int create_file(const char *filename, char *text_content)
 {
 	char *buf;
 	int file_name;
-    int write_file;
-    int read_file;
+   	 int write_file;
+   	 int read_file;
 
 
 	buf = malloc(strlen(text_content) + 1);
@@ -23,11 +23,11 @@ int create_file(const char *filename, char *text_content)
 	file_name = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 
 	if (file_name < 0)
-    {
-        free(buf);
-        return (0);
+	{
+        	free(buf);
+       		 return (0);
 
-    }
+   	 }
 
     read_file = strlen(text_content);
     strcpy(buf, text_content);
