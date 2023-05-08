@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * read_textile - reads and prints files content to thne STDI
+ * read_textfile - reads and prints files content to thne S
  * @letters: letters to be printed
  * @filename: file_name to be read
  * Return: printed text
