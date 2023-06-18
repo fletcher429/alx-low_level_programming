@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_dlistint - prints a double linked list
+ * dlistint_len - prints a double linked list
  * @h: head node
  * Return: Count
  */
