@@ -24,3 +24,10 @@ In your library, you decide to use a hash table. Here's how it works:
 5. **Handling Collisions**: Sometimes, two different books might have the same hash value (i.e., they map to the same shelf). This is called a collision. To handle collisions, the library might have multiple ways to store books on the same shelf. For example, they could use linked lists or other data structures to store multiple books with the same hash value.
 
 6. **Efficiency**: With a well-designed hash function, the library can efficiently store and retrieve books. The time it takes to find a book is typically O(1), or constant time, on average, making hash tables very efficient for many applications.
+
+## IMPLEMENTING A HASH TABLE IN C
+`https://www.digitalocean.com/community/tutorials/hash-table-in-c-plus-plus`
+1.  We first implement the hash function
+
+
+
