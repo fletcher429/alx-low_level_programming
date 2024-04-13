@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <strings.h>
+#include <string.h>
 #include <limits.h>
 /**
  * struct hash_node_s - Node of a hash table
@@ -32,3 +32,4 @@ typedef struct hash_table_s
 } hash_table_t;
 unsigned long int hash_djb2(const unsigned char *str);
 hash_table_t *hash_table_create(unsigned long int size);
+unsigned long int key_index(const unsigned char *key, unsigned long int size);
