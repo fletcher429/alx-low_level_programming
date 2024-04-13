@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <strings.h>
 #include <limits.h>
-#define CAPACITY 100000
 /**
  * struct hash_node_s - Node of a hash table
  *
